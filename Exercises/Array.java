@@ -11,7 +11,10 @@ public class Array {
     public static void passValue(int grades){
         grades[0] = grade1;
         grades [1] = grade2;
-        grades [2] = grade3;
+        grades [2] = grade3;jxhd
+                nbcnb
+
+
 
     }
 

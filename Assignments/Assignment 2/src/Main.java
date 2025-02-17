@@ -11,7 +11,7 @@ public class Main {
         Scanner scanner = new Scanner (System.in);
 //while loop to implement number of arrays from user
         while (true){
-            System.out.println("Please the the number of elements in an array (maximum 20).");
+            System.out.println("Please the the number of elements in an array (maximum 20):");
                numberOfElement = scanner.nextInt();
 
 //if and else condition to check user input is not more than 20
@@ -19,21 +19,18 @@ public class Main {
                     System.out.println("please number of elements must not be more than 20");
                 }
                 else{
-                    System.out.println("Number of elements can not be more than 20 please ");
-                    break;
-                }
+                    break;}
         }
 
-        //initialising array size to user input
-        int [] array = new int [numberOfElement];
-
+      int [] array = new int[numberOfElement];
+        System.out.println("Enter" +  numberOfElement +  "numbers");
         //for loop to collect and store array number of elements
         for (int i=0;i<array.length;i++){
-            System.out.println("please enter arrays element");
             int arrayElement =scanner.nextInt();
             array[i] = arrayElement;
-
         }
+        Array.displayArray(array);
+        Array.largestElement(array);
 
     }
 }

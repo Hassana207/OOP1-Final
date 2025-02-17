@@ -29,8 +29,12 @@ public class Main {
             int arrayElement =scanner.nextInt();
             array[i] = arrayElement;
         }
+
+
         Array.displayArray(array);
         Array.largestElement(array);
+        Array.smallestElement(array);
+        Array.sumOfElement(array);
 
     }
 }

@@ -23,7 +23,7 @@ public class Main {
         }
 
       int [] array = new int[numberOfElement];
-        System.out.println("Enter" +  numberOfElement +  "numbers");
+        System.out.println("Enter" +" "  + numberOfElement + " " +"numbers");
         //for loop to collect and store array number of elements
         for (int i=0;i<array.length;i++){
             int arrayElement =scanner.nextInt();
@@ -35,6 +35,12 @@ public class Main {
         Array.largestElement(array);
         Array.smallestElement(array);
         Array.sumOfElement(array);
+        Array.averageOfElement(array);
+
+        System.out.println("Enter a number to search:");
+        int number = scanner.nextInt();
+        Array.searchElement(array,number);
+        Array.bubbleSort(array);
 
     }
 }
